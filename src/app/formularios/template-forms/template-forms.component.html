@@ -1,0 +1,12 @@
+<section class="card-form">
+    <h3>Formulario</h3>
+    <form #formulario="ngForm" (ngSubmit)="onSubmit(formulario)" >
+        <input type="text" placeholder="nombre" class="form-control" name="nombre"  required ngModel/>
+        <input type="text" placeholder="apellido" class="form-control" name="apellido" ngModel/>
+        <input type="text" placeholder="email" class="form-control" name="email" ngModel/>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" ngModel></textarea>
+        <button id="submit" type="submit" [disabled]="formulario.invalid">Enviar</button>
+        <p>{{formulario.value.nombre}}</p>
+    </form>
+
+</section>

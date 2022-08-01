@@ -1,0 +1,14 @@
+<section class="card-form">
+    <h3>Formulario</h3>
+    <form [formGroup]="form" >
+        <input type="text" placeholder="id" class="form-control" name="id" formControlName="id" />
+        <input type="text" placeholder="altura" class="form-control" name="altura" formControlName="altura"/>
+        <input type="text" placeholder="descripcion" class="form-control" name="descripcion"  formControlName="descripcion"/>
+        <input type="text" placeholder="grupo" class="form-control" name="grupo"  formControlName="grupo"/>
+        <input type="text" placeholder="imagen" class="form-control" name="imagen"  formControlName="imagen"/>
+        <input type="text" placeholder="nombre" class="form-control" name="nombre"  formControlName="nombre"/>
+        
+        <button id="submit" type="submit" >Enviar producto</button>
+    
+    </form>
+</section>

@@ -1,0 +1,7 @@
+.textcolor{
+    color: azure;
+}
+
+.textcolor:hover{
+    opacity: 70%;
+}

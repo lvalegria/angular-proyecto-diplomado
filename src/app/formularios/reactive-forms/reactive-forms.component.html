@@ -1,0 +1,13 @@
+<section class="card-form">
+    <h3>Formulario</h3>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" >
+        <input type="text" placeholder="nombre" class="form-control" name="nombre" formControlName="nombre" />
+        <input type="text" placeholder="apellido" class="form-control" name="apellido" formControlName="apellido"/>
+        <input type="text" placeholder="email" class="form-control" name="email"  formControlName="correo"/>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        
+        <button id="submit" type="submit" >Enviar</button>
+        <p>{{form.value.nombre}}</p>
+    </form>
+</section>
+
